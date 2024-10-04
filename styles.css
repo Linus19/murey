@@ -28,6 +28,23 @@ body {
 
 
 /* Top Info Bar */
+@media only screen and (max-width: 768px) {
+    .top-info {
+        font-size: 14px; /* Reduce font size on tablets */
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .top-info {
+        font-size: 12px; /* Reduce font size further on small screens */
+        padding: 6px;
+    }
+
+    .top-info p {
+        line-height: 1.5; /* Increase line height for better readability */
+    }
+}
 .top-info {
     background-color: #1f2a44;
     color: #fff;
@@ -44,7 +61,6 @@ body {
     color: #00aaff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 /* Navigation Bar */
 header {
     background-color: #fff;
