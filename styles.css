@@ -284,26 +284,42 @@ nav {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
+    .hero {
+        background-size: contain; /* Adjust background size for mobile */
+        height: auto; /* Let height adjust based on content */
     }
 
     .hero-content {
         padding: 20px;
-        /* Add padding to ensure spacing around the content */
     }
 
     .hero-content h1 {
         font-size: 28px;
-        /* Smaller heading for mobile */
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .notepad h1 {
         font-size: 1.6em;
-        /* Adjust to fit better on mobile */
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        background-size: contain;
+        background-position: top;
+        height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .notepad h1 {
+        font-size: 1.4em;
+    }
+
+    .btn {
+        font-size: 14px; /* Adjust button size for mobile */
+        padding: 8px 15px;
     }
 }
 
