@@ -10,26 +10,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
 }
-body {
-    font-size: 16px;
-}
 
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-}
-
-/* Ensure the content fits within the viewport width */
-.container, .service-list, .choose-content {
-    padding: 0 15px;
-}
 .underline {
     position: relative;
     display: inline-block;
@@ -269,49 +250,62 @@ nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Mobile Responsive */
-.hero {
-    background-size: cover; /* Ensure image covers the screen */
-    height: auto; /* Adjust height based on content for small devices */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+        /* The animated text will expand to full width */
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-right: 2px solid transparent;
+    }
+
+    50% {
+        border-right: 2px solid #000;
+    }
+}
+
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
-    .hero {
-        background-size: contain;
-        height: auto;
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-content {
+        padding: 20px;
+        /* Add padding to ensure spacing around the content */
     }
 
     .hero-content h1 {
-        font-size: 24px; /* Adjust font size on tablets */
-    }
-    
-    .notepad {
-        padding: 10px; /* Smaller padding on mobile */
+        font-size: 28px;
+        /* Smaller heading for mobile */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .notepad h1 {
-        font-size: 1.5em; /* Reduce heading size on mobile */
-    }
-
-    .btn {
-        font-size: 12px; /* Reduce button size */
-        padding: 8px 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        background-size: cover;
-        background-position: center top;
-    }
-
-    .hero-content h1 {
-        font-size: 20px; /* Smaller heading for phones */
-    }
-
-    .btn {
-        font-size: 12px;
-        padding: 6px 10px;
+        font-size: 1.6em;
+        /* Adjust to fit better on mobile */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
 
@@ -437,16 +431,47 @@ nav {
     color: #666;
 }
 
-.service-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 0 15px;
+@media (max-width: 768px) {
+    .services h2 {
+        font-size: 20px;
+    }
+
+    .services p {
+        font-size: 15px;
+    }
+
+    .service-item {
+        padding: 15px;
+    }
+
+    .service-item img {
+        width: 40px;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+
+    .service-item p {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
+    .services h2 {
+        font-size: 24px;
+    }
+
+    .services p {
+        font-size: 14px;
+    }
+
     .service-item {
         padding: 10px;
+    }
+
+    .service-item img {
+        width: 35px;
     }
 
     .service-item h3 {
@@ -457,6 +482,7 @@ nav {
         font-size: 12px;
     }
 }
+
 /* Why Choose Murey */
 .why-choose-us {
     padding: 50px 20px;
