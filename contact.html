@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Murey Yego & Associates CPA</title>
+    <link rel="stylesheet" href="styles.css">
+    <title> Portfolio website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    
+</head>
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-info">
+        <p>MON - FRI | 8AM TO 5PM, SAT 9AM TO 12 PM | <span>+254780851599</span></p>
+    </div>
+
+    <!-- Header and Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="./images/logo3.jpg" alt="Murey Yego & Associates CPA Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Audit and Assurance.html">Audit and Assurance</a></li>
+                        <li><a href="Business Advisory.html">Business Advisory</a></li>
+                        <li><a href="Buying and Selling of Property.html">buying and selling of property</a></li>
+                        <li><a href="Farm Accounting.html">Farm Accounting</a></li>
+                        <li><a href="Finance and Accounting.html">Finanace and Accounting</a></li>
+                        <li><a href="Resource Mobilization.html">Resource Mobilization</a></li>
+                        <li><a href="Tax and Regulatory Services.html">Tax and regulatory services</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section> 
+        <section>
+            <div class="about-hero-content">
+                <p>
+                    <a href="index.html">Home</a> / 
+                    <a href="about.html">About Us</a>
+                </p>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="container">
+                <h2>Contact us for any queries</h2>
+                <p>Our highly qualified team possesses advanced skills and significant industry experience which allows them to provide high-quality services and solutions to all our clients.</p>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Head Office Address</h3>
+                        <p>EBBY TOWERS - Kenyatta Street, Kitale, Kenya</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Get in touch</h3>
+                        <p><a href="mureyyego@gmail.com">mureyyego@gmail.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Phone</h3>
+                        <p>+254780851599</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Embed Google Maps showing the precise location of EBBY TOWERS with a marker -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.9767110201356!2d35.00115691031709!3d1.0143476989716238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178227a4d97551d5%3A0x7dad05e1867bdf50!2sEbby%20Towers!5e1!3m2!1sen!2ske!4v1727851574930!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+            </div>
+        </section>
+        
+        <div id="contact"
+    class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
+    <h2 class="text-center text-3xl font-semibold text-gray-800 mb-8">Send us a Message</h2>
+
+    <form action="https://api.web3forms.com/submit"
+        class="max-w-2xl mx-auto bg-white p-8 border border-gray-300 rounded-xl shadow-lg" method="POST"
+        onsubmit="handleFormSubmission(event);">
+        <input type="hidden" name="access_key" value="b24f3bfb-e474-4c1d-ac27-7dde95172200">
+        
+        <!-- Name and Email Fields -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+            <input type="text" placeholder="Enter your name"
+                class="flex-1 p-4 outline-none border border-gray-400 rounded-md bg-white shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-100"
+                name="name" required>
+            <input type="email" placeholder="Enter your email"
+                class="flex-1 p-4 outline-none border border-gray-400 rounded-md bg-white shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-100"
+                name="email" required>
+        </div>
+
+        <!-- Message Field -->
+        <textarea rows="6" placeholder="Enter your message"
+            class="w-full p-4 mt-6 outline-none border border-gray-400 rounded-md bg-white shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-100"
+            name="message" required></textarea>
+
+        <!-- Submit Button -->
+        <div class="flex justify-center mt-8">
+            <button
+                class="py-3 px-8 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 transition duration-300 ease-in-out flex items-center">
+                Submit 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </button>
+        </div>
+    </form>
+</div>
+    
+
+    <!-- Our Practice Areas Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Head Office<br> EBBY TOWERS - Kenyatta Street, Kitale, Kenya<br>+254780851599<br>mureyyego@gmail.com
+                </p>
+            </div>
+            <div class="important-links">
+                <h3>Important Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h3>Sign Up for Email Alerts</h3>
+                <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100081922223527" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f">Facebook</i>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>© Murey Yego & Associates CPA. All rights reserved. Design by Likiro Technologies</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        function handleFormSubmission(event) {
+            event.preventDefault(); // Prevents default form submission
+    
+            const form = event.target;
+            
+            // Submits the form to Web3Forms
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form)
+            }).then(response => {
+                if (response.ok) {
+                    // Clears the form after successful submission
+                    form.reset();
+    
+                    // Reloads the page after a delay
+                    setTimeout(function() {
+                        location.reload();
+                    }, 2000); // Adjust delay time as needed
+                } else {
+                    console.error('Form submission failed:', response);
+                }
+            }).catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
+
+
+</body>
+</html>
